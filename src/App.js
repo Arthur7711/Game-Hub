@@ -4,6 +4,7 @@ import AllGames from "./pages/allGames/AllGames";
 import About from "./pages/about/About";
 import Register from "./pages/register/Register";
 
+
 function App() {
   return (
     <>

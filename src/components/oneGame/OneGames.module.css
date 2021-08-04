@@ -1,0 +1,25 @@
+.forOneGame {
+  width: 300px;
+  margin: 0 25px 25px 0;
+  background-color: #2a2a2a;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.7s;
+}
+.forOneGame:hover {
+  background-color: #4b4b4b;
+}
+
+.forOneGame .forImg {
+  width: 300px;
+}
+
+.forOneGame .forImg img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.textPart {
+  padding: 0 20px 20px 24px;
+  color: #fff;
+}
