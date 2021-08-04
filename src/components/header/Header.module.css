@@ -1,0 +1,24 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2a2a2a;
+}
+.header a {
+  text-decoration: none;
+  color: #ccc;
+}
+.header .navigation {
+  display: flex;
+  justify-content: center;
+}
+.header .navigation a {
+  margin: 0 20px 0 20px;
+}
+
+.icons a {
+  font-size: 16px;
+}
+.icon {
+  color: #ccc;
+}
