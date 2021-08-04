@@ -1,25 +1,26 @@
 import React from "react";
-import ImageGallery from "react-image-gallery";
+import Carousel from "react-gallery-carousel";
+import "react-gallery-carousel/dist/index.css";
+import img1 from "../../img/roulette.png";
+import img2 from "../../img/spin.png";
+import img3 from "../../img/animationSpin.gif";
 
-const images = [
-  {
-    original: "https://picsum.photos/id/1018/1000/600/",
-    thumbnail: "https://picsum.photos/id/1018/250/150/",
-  },
-  {
-    original: "https://picsum.photos/id/1015/1000/600/",
-    thumbnail: "https://picsum.photos/id/1015/250/150/",
-  },
-  {
-    original: "https://picsum.photos/id/1019/1000/600/",
-    thumbnail: "https://picsum.photos/id/1019/250/150/",
-  },
-];
+
+const images = [{ src: img1 }, { src: img2 },{src:img3}];
 
 export default function Slider() {
   return (
     <div>
-      <ImageGallery items={images} />
+      <div style={{ display: "flex", justifyContent: "center" }}>
+        <div className="partners" style={{ height: "calc(100vh - 175px)" }}>
+          <Carousel
+            isAutoPlaying={true}
+            autoPlayInterval={3000}
+            hasThumbnail
+            images={images}
+          />
+        </div>
+      </div>
     </div>
   );
 }
