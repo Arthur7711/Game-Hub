@@ -6,7 +6,6 @@ import PersonIcon from "@material-ui/icons/Person";
 import s from "./Header.module.css";
 import logo from "../../img/logo1.png";
 
-
 export default function Header() {
   return (
     <header className={s.header}>
@@ -14,15 +13,21 @@ export default function Header() {
         <img alt="logo" src={logo} width="50px" />
       </div>
       <nav className={s.navigation}>
-        <NavLink to="/">
-          <b>Home</b>
-        </NavLink>
-        <NavLink to="/games">
-          <b>Games</b>
-        </NavLink>
-        <NavLink to="/about">
-          <b>About</b>
-        </NavLink>
+        <b>
+          <NavLink exact to="/" activeClassName={s.selected}>
+            Home
+          </NavLink>
+        </b>
+        <b>
+          <NavLink to="/games" activeClassName={s.selected}>
+            Games
+          </NavLink>
+        </b>
+        <b>
+          <NavLink to="/about" activeClassName={s.selected}>
+            About
+          </NavLink>
+        </b>
       </nav>
       <div className={s.icons}>
         <Language />
