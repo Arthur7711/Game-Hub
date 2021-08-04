@@ -10,6 +10,8 @@ export default function OneGame() {
     { url: img, title: "some Title2", description: "some description2", id: 2 },
     { url: img, title: "some Title3", description: "some description3", id: 3 },
     { url: img, title: "some Title4", description: "some description4", id: 4 },
+    { url: img, title: "some Title5", description: "some description4", id: 5 },
+    { url: img, title: "some Title6", description: "some description4", id: 6 },
   ];
 
   useEffect(() => {
