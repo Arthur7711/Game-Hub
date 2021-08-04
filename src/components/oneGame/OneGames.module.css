@@ -6,6 +6,7 @@
   cursor: pointer;
   transition: 0.7s;
 }
+
 .forOneGame:hover {
   background-color: #4b4b4b;
 }
