@@ -1,6 +1,7 @@
 import React from "react";
 import Carousel from "react-gallery-carousel";
 import "react-gallery-carousel/dist/index.css";
+import s from "./Slider.module.css";
 import img1 from "../../img/g1.png";
 // import img2 from "../../img/spin.png";
 // import img3 from "../../img/animationSpin.gif";
@@ -17,17 +18,20 @@ const images = [
 
 export default function Slider() {
   return (
-    <div>
-      <div style={{ display: "flex", justifyContent: "center" }}>
-        <div className="slid" style={{ height: "calc(100vh - 175px)" }}>
+    <>
+      <div className={s.parentCarousel}>
+        <div className={s.slid}>
           <Carousel
             isAutoPlaying={true}
             autoPlayInterval={3000}
-            hasThumbnail
             images={images}
+            leftIcon={false}
+            rightIcon={false}
+            miniIcon={false}
+            maxIcon={false}
           />
         </div>
       </div>
-    </div>
+    </>
   );
 }

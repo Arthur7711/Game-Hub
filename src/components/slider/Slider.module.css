@@ -1,4 +1,16 @@
+.parentCarousel {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.slid {
+  /* height: 100%; */
+  width: 63%;
+}
+
 .slid img {
   object-fit: contain;
   width: 100%;
 }
+
